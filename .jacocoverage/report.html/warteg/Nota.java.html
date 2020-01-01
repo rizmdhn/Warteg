@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>Nota.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">JaCoCoverage analysis of project &quot;Warteg&quot; (powered by JaCoCo from EclEmma)</a> &gt; <a href="index.source.html" class="el_package">warteg</a> &gt; <span class="el_source">Nota.java</span></div><h1>Nota.java</h1><pre class="source lang-java linenums">/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package warteg;
+
+import java.util.ArrayList;
+import java.util.List;
+import javax.swing.JOptionPane;
+import warteg.Order;
+
+/**
+ *
+ * @author user
+ */
+public class Nota extends javax.swing.JFrame {
+
+    /**
+     * Creates new form Pesanan
+     */
+<span class="nc" id="L22">    public Nota() {</span>
+<span class="nc" id="L23">        initComponents();</span>
+<span class="nc" id="L24">        List&lt;String&gt; list2 = Order.getList();</span>
+<span class="nc" id="L25">        getdata1.addAll(list2);</span>
+<span class="nc" id="L26">    }</span>
+<span class="nc" id="L27">    public ArrayList&lt;String&gt; getdata= new ArrayList&lt;&gt;();</span>
+    
+<span class="nc" id="L29">    public ArrayList&lt;String&gt; getdata1 = new ArrayList&lt;&gt;();</span>
+
+    public void tampil(){
+<span class="nc" id="L32">        int option = cmbPilihan.getSelectedIndex();</span>
+<span class="nc" id="L33">        TablePesan.setValueAt(&quot;Nama&quot;, 0, 0);</span>
+<span class="nc" id="L34">        TablePesan.setValueAt(&quot;Meja&quot;, 1, 0);</span>
+<span class="nc" id="L35">        TablePesan.setValueAt(&quot;Nasi&quot;, 2, 0);</span>
+<span class="nc" id="L36">        TablePesan.setValueAt(&quot;Ayam&quot;, 3, 0);</span>
+<span class="nc" id="L37">        TablePesan.setValueAt(&quot;Kerang&quot;, 4, 0);</span>
+<span class="nc" id="L38">        TablePesan.setValueAt(&quot;Ati Ampela&quot;, 5, 0);</span>
+<span class="nc" id="L39">        TablePesan.setValueAt(&quot;Cumi&quot;, 6, 0);</span>
+<span class="nc" id="L40">        TablePesan.setValueAt(&quot;Ikan&quot;, 7, 0);</span>
+<span class="nc" id="L41">        TablePesan.setValueAt(&quot;Kentang&quot;, 8, 0);</span>
+<span class="nc" id="L42">        TablePesan.setValueAt(&quot;Empal&quot;, 9,0);</span>
+<span class="nc" id="L43">        TablePesan.setValueAt(&quot;Udang&quot;, 10, 0);</span>
+<span class="nc" id="L44">        TablePesan.setValueAt(&quot;Air Mineral&quot;, 11, 0);</span>
+<span class="nc" id="L45">        TablePesan.setValueAt(&quot;Teh&quot;, 12, 0);</span>
+<span class="nc" id="L46">        TablePesan.setValueAt(&quot;Kopi&quot;, 13, 0);</span>
+<span class="nc" id="L47">        TablePesan.setValueAt(&quot;Kerupuk&quot;, 14, 0);</span>
+<span class="nc" id="L48">        TablePesan.setValueAt(&quot;Gorengan&quot;, 15, 0);</span>
+<span class="nc" id="L49">        TablePesan.setValueAt(&quot;Total&quot;, 16, 0);</span>
+<span class="nc" id="L50">        TablePesan.setValueAt(&quot;Bayar&quot;, 17, 0);</span>
+<span class="nc" id="L51">        TablePesan.setValueAt(&quot;Kembalian&quot;, 18, 0);</span>
+<span class="nc" id="L52">        TablePesan.setValueAt(&quot;Catatan&quot;, 19, 0);</span>
+<span class="nc bnc" id="L53" title="All 2 branches missed.">        if(option == 0){</span>
+<span class="nc" id="L54">            TablePesan.setValueAt(getdata1.get(0), 0, 1);</span>
+<span class="nc" id="L55">            TablePesan.setValueAt(getdata1.get(1), 1, 1);</span>
+<span class="nc" id="L56">            TablePesan.setValueAt(getdata1.get(2), 2, 1);</span>
+<span class="nc" id="L57">            TablePesan.setValueAt(getdata1.get(3), 3, 1);</span>
+<span class="nc" id="L58">            TablePesan.setValueAt(getdata1.get(4), 4, 1);</span>
+<span class="nc" id="L59">            TablePesan.setValueAt(getdata1.get(5), 5, 1);</span>
+<span class="nc" id="L60">            TablePesan.setValueAt(getdata1.get(6), 6, 1);</span>
+<span class="nc" id="L61">            TablePesan.setValueAt(getdata1.get(7), 7, 1);</span>
+<span class="nc" id="L62">            TablePesan.setValueAt(getdata1.get(8), 8, 1);</span>
+<span class="nc" id="L63">            TablePesan.setValueAt(getdata1.get(9), 9, 1);</span>
+<span class="nc" id="L64">            TablePesan.setValueAt(getdata1.get(10), 10, 1);</span>
+<span class="nc" id="L65">            TablePesan.setValueAt(getdata1.get(11), 11, 1);</span>
+<span class="nc" id="L66">            TablePesan.setValueAt(getdata1.get(12), 12, 1);</span>
+<span class="nc" id="L67">            TablePesan.setValueAt(getdata1.get(13), 13, 1);</span>
+<span class="nc" id="L68">            TablePesan.setValueAt(getdata1.get(14), 14, 1);</span>
+<span class="nc" id="L69">            TablePesan.setValueAt(getdata1.get(15), 15, 1);</span>
+<span class="nc" id="L70">            TablePesan.setValueAt(getdata1.get(16), 16, 1);</span>
+<span class="nc" id="L71">            TablePesan.setValueAt(getdata1.get(17), 17, 1);</span>
+<span class="nc" id="L72">            TablePesan.setValueAt(getdata1.get(18), 18, 1);</span>
+<span class="nc" id="L73">            TablePesan.setValueAt(getdata1.get(19), 19, 1);</span>
+        } else {
+<span class="nc bnc" id="L75" title="All 2 branches missed.">            if(option == 1){</span>
+<span class="nc" id="L76">                TablePesan.setValueAt(getdata1.get(20), 0, 1);</span>
+<span class="nc" id="L77">                TablePesan.setValueAt(getdata1.get(21), 1, 1);</span>
+<span class="nc" id="L78">                TablePesan.setValueAt(getdata1.get(22), 2, 1);</span>
+<span class="nc" id="L79">                TablePesan.setValueAt(getdata1.get(23), 3, 1);</span>
+<span class="nc" id="L80">                TablePesan.setValueAt(getdata1.get(24), 4, 1);</span>
+<span class="nc" id="L81">                TablePesan.setValueAt(getdata1.get(25), 5, 1);</span>
+<span class="nc" id="L82">                TablePesan.setValueAt(getdata1.get(26), 6, 1);</span>
+<span class="nc" id="L83">                TablePesan.setValueAt(getdata1.get(27), 7, 1);</span>
+<span class="nc" id="L84">                TablePesan.setValueAt(getdata1.get(28), 8, 1);</span>
+<span class="nc" id="L85">                TablePesan.setValueAt(getdata1.get(29), 9, 1);</span>
+<span class="nc" id="L86">                TablePesan.setValueAt(getdata1.get(30), 10, 1);</span>
+<span class="nc" id="L87">                TablePesan.setValueAt(getdata1.get(31), 11, 1);</span>
+<span class="nc" id="L88">                TablePesan.setValueAt(getdata1.get(32), 12, 1);</span>
+<span class="nc" id="L89">                TablePesan.setValueAt(getdata1.get(33), 13, 1);</span>
+<span class="nc" id="L90">                TablePesan.setValueAt(getdata1.get(34), 14, 1);</span>
+<span class="nc" id="L91">                TablePesan.setValueAt(getdata1.get(35), 15, 1);</span>
+<span class="nc" id="L92">                TablePesan.setValueAt(getdata1.get(36), 16, 1);</span>
+<span class="nc" id="L93">                TablePesan.setValueAt(getdata1.get(37), 17, 1);</span>
+<span class="nc" id="L94">                TablePesan.setValueAt(getdata1.get(38), 18, 1);</span>
+<span class="nc" id="L95">                TablePesan.setValueAt(getdata1.get(39), 19, 1);</span>
+            } else {
+<span class="nc bnc" id="L97" title="All 2 branches missed.">                if(option == 2){</span>
+<span class="nc" id="L98">                    TablePesan.setValueAt(getdata1.get(40), 0, 1);</span>
+<span class="nc" id="L99">                    TablePesan.setValueAt(getdata1.get(41), 1, 1);</span>
+<span class="nc" id="L100">                    TablePesan.setValueAt(getdata1.get(42), 2, 1);</span>
+<span class="nc" id="L101">                    TablePesan.setValueAt(getdata1.get(43), 3, 1);</span>
+<span class="nc" id="L102">                    TablePesan.setValueAt(getdata1.get(44), 4, 1);</span>
+<span class="nc" id="L103">                    TablePesan.setValueAt(getdata1.get(45), 5, 1);</span>
+<span class="nc" id="L104">                    TablePesan.setValueAt(getdata1.get(46), 6, 1);</span>
+<span class="nc" id="L105">                    TablePesan.setValueAt(getdata1.get(47), 7, 1);</span>
+<span class="nc" id="L106">                    TablePesan.setValueAt(getdata1.get(48), 8, 1);</span>
+<span class="nc" id="L107">                    TablePesan.setValueAt(getdata1.get(49), 9, 1);</span>
+<span class="nc" id="L108">                    TablePesan.setValueAt(getdata1.get(50), 10, 1);</span>
+<span class="nc" id="L109">                    TablePesan.setValueAt(getdata1.get(51), 11, 1);</span>
+<span class="nc" id="L110">                    TablePesan.setValueAt(getdata1.get(52), 12, 1);</span>
+<span class="nc" id="L111">                    TablePesan.setValueAt(getdata1.get(53), 13, 1);</span>
+<span class="nc" id="L112">                    TablePesan.setValueAt(getdata1.get(54), 14, 1);</span>
+<span class="nc" id="L113">                    TablePesan.setValueAt(getdata1.get(55), 15, 1);</span>
+<span class="nc" id="L114">                    TablePesan.setValueAt(getdata1.get(56), 16, 1);</span>
+<span class="nc" id="L115">                    TablePesan.setValueAt(getdata1.get(57), 17, 1);</span>
+<span class="nc" id="L116">                    TablePesan.setValueAt(getdata1.get(58), 18, 1);</span>
+<span class="nc" id="L117">                    TablePesan.setValueAt(getdata1.get(59), 19, 1);</span>
+                } else {
+<span class="nc" id="L119">                    JOptionPane.showMessageDialog(rootPane, &quot;Data Tidak Ada&quot;);</span>
+                }
+            }
+        }
+<span class="nc" id="L123">    }</span>
+    
+    
+    /**
+     * This method is called from within the constructor to initialize the form.
+     * WARNING: Do NOT modify this code. The content of this method is always
+     * regenerated by the Form Editor.
+     */
+    @SuppressWarnings(&quot;unchecked&quot;)
+    // &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+    private void initComponents() {
+
+<span class="nc" id="L135">        jPanel1 = new javax.swing.JPanel();</span>
+<span class="nc" id="L136">        cmbPilihan = new javax.swing.JComboBox();</span>
+<span class="nc" id="L137">        lblBack = new javax.swing.JLabel();</span>
+<span class="nc" id="L138">        jLabel1 = new javax.swing.JLabel();</span>
+<span class="nc" id="L139">        jScrollPane2 = new javax.swing.JScrollPane();</span>
+<span class="nc" id="L140">        TablePesan = new javax.swing.JTable();</span>
+
+<span class="nc" id="L142">        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);</span>
+<span class="nc" id="L143">        setUndecorated(true);</span>
+
+<span class="nc" id="L145">        jPanel1.setBackground(new java.awt.Color(213, 184, 255));</span>
+
+<span class="nc" id="L147">        cmbPilihan.setFont(new java.awt.Font(&quot;Tahoma&quot;, 1, 16)); // NOI18N</span>
+<span class="nc" id="L148">        cmbPilihan.setModel(new javax.swing.DefaultComboBoxModel(new String[] { &quot;ORD 1&quot;, &quot;ORD 2&quot;, &quot;ORD 3&quot; }));</span>
+<span class="nc" id="L149">        cmbPilihan.addActionListener(new java.awt.event.ActionListener() {</span>
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+<span class="nc" id="L151">                cmbPilihanActionPerformed(evt);</span>
+<span class="nc" id="L152">            }</span>
+        });
+
+<span class="nc" id="L155">        lblBack.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);</span>
+<span class="nc" id="L156">        lblBack.setIcon(new javax.swing.ImageIcon(&quot;C:\\Users\\MILLENIA SAHARANI\\Pictures\\Java\\back.png&quot;)); // NOI18N</span>
+<span class="nc" id="L157">        lblBack.addMouseListener(new java.awt.event.MouseAdapter() {</span>
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+<span class="nc" id="L159">                lblBackMouseClicked(evt);</span>
+<span class="nc" id="L160">            }</span>
+        });
+
+<span class="nc" id="L163">        jLabel1.setFont(new java.awt.Font(&quot;Ink Free&quot;, 1, 36)); // NOI18N</span>
+<span class="nc" id="L164">        jLabel1.setForeground(new java.awt.Color(103, 65, 114));</span>
+<span class="nc" id="L165">        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);</span>
+<span class="nc" id="L166">        jLabel1.setText(&quot;NOTA&quot;);</span>
+
+<span class="nc" id="L168">        TablePesan.setModel(new javax.swing.table.DefaultTableModel(</span>
+            new Object [][] {
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null}
+            },
+            new String [] {
+                &quot;Item&quot;, &quot;Value&quot;
+            }
+<span class="nc" id="L195">        ) {</span>
+<span class="nc" id="L196">            boolean[] canEdit = new boolean [] {</span>
+                false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+<span class="nc" id="L201">                return canEdit [columnIndex];</span>
+            }
+        });
+<span class="nc" id="L204">        jScrollPane2.setViewportView(TablePesan);</span>
+
+<span class="nc" id="L206">        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);</span>
+<span class="nc" id="L207">        jPanel1.setLayout(jPanel1Layout);</span>
+<span class="nc" id="L208">        jPanel1Layout.setHorizontalGroup(</span>
+<span class="nc" id="L209">            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)</span>
+<span class="nc" id="L210">            .addGroup(jPanel1Layout.createSequentialGroup()</span>
+<span class="nc" id="L211">                .addContainerGap()</span>
+<span class="nc" id="L212">                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)</span>
+<span class="nc" id="L213">                    .addGroup(jPanel1Layout.createSequentialGroup()</span>
+<span class="nc" id="L214">                        .addComponent(lblBack)</span>
+<span class="nc" id="L215">                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)</span>
+<span class="nc" id="L216">                        .addComponent(jLabel1)</span>
+<span class="nc" id="L217">                        .addGap(185, 185, 185)</span>
+<span class="nc" id="L218">                        .addComponent(cmbPilihan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))</span>
+<span class="nc" id="L219">                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))</span>
+<span class="nc" id="L220">                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))</span>
+        );
+<span class="nc" id="L222">        jPanel1Layout.setVerticalGroup(</span>
+<span class="nc" id="L223">            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)</span>
+<span class="nc" id="L224">            .addGroup(jPanel1Layout.createSequentialGroup()</span>
+<span class="nc" id="L225">                .addContainerGap()</span>
+<span class="nc" id="L226">                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)</span>
+<span class="nc" id="L227">                    .addComponent(lblBack, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)</span>
+<span class="nc" id="L228">                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)</span>
+<span class="nc" id="L229">                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)</span>
+<span class="nc" id="L230">                        .addComponent(cmbPilihan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))</span>
+<span class="nc" id="L231">                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)</span>
+<span class="nc" id="L232">                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 380, javax.swing.GroupLayout.PREFERRED_SIZE)</span>
+<span class="nc" id="L233">                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))</span>
+        );
+
+<span class="nc" id="L236">        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());</span>
+<span class="nc" id="L237">        getContentPane().setLayout(layout);</span>
+<span class="nc" id="L238">        layout.setHorizontalGroup(</span>
+<span class="nc" id="L239">            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)</span>
+<span class="nc" id="L240">            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)</span>
+        );
+<span class="nc" id="L242">        layout.setVerticalGroup(</span>
+<span class="nc" id="L243">            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)</span>
+<span class="nc" id="L244">            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)</span>
+        );
+
+<span class="nc" id="L247">        pack();</span>
+<span class="nc" id="L248">        setLocationRelativeTo(null);</span>
+<span class="nc" id="L249">    }// &lt;/editor-fold&gt;//GEN-END:initComponents</span>
+
+    private void cmbPilihanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbPilihanActionPerformed
+<span class="nc" id="L252">        tampil();</span>
+<span class="nc" id="L253">    }//GEN-LAST:event_cmbPilihanActionPerformed</span>
+
+    private void lblBackMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblBackMouseClicked
+<span class="nc" id="L256">        this.dispose();</span>
+<span class="nc" id="L257">        new Order().setVisible(true);</span>
+<span class="nc" id="L258">    }//GEN-LAST:event_lblBackMouseClicked</span>
+
+    /**
+     * @param args the command line arssguments
+     */
+    public static void main(String args[]) {
+        /* Set the Nimbus look and feel */
+        //&lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot; Look and feel setting code (optional) &quot;&gt;
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        try {
+<span class="nc bnc" id="L270" title="All 2 branches missed.">            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {</span>
+<span class="nc bnc" id="L271" title="All 2 branches missed.">                if (&quot;Nimbus&quot;.equals(info.getName())) {</span>
+<span class="nc" id="L272">                    javax.swing.UIManager.setLookAndFeel(info.getClassName());</span>
+<span class="nc" id="L273">                    break;</span>
+                }
+            }
+<span class="nc" id="L276">        } catch (ClassNotFoundException ex) {</span>
+<span class="nc" id="L277">            java.util.logging.Logger.getLogger(Nota.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);</span>
+<span class="nc" id="L278">        } catch (InstantiationException ex) {</span>
+<span class="nc" id="L279">            java.util.logging.Logger.getLogger(Nota.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);</span>
+<span class="nc" id="L280">        } catch (IllegalAccessException ex) {</span>
+<span class="nc" id="L281">            java.util.logging.Logger.getLogger(Nota.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);</span>
+<span class="nc" id="L282">        } catch (javax.swing.UnsupportedLookAndFeelException ex) {</span>
+<span class="nc" id="L283">            java.util.logging.Logger.getLogger(Nota.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);</span>
+<span class="nc" id="L284">        }</span>
+        //&lt;/editor-fold&gt;
+        //&lt;/editor-fold&gt;
+
+        /* Create and display the form */
+<span class="nc" id="L289">        java.awt.EventQueue.invokeLater(new Runnable() {</span>
+            public void run() {
+<span class="nc" id="L291">                new Nota().setVisible(true);</span>
+<span class="nc" id="L292">            }</span>
+        });
+<span class="nc" id="L294">    }</span>
+
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTable TablePesan;
+    private javax.swing.JComboBox cmbPilihan;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JLabel lblBack;
+    // End of variables declaration//GEN-END:variables
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.6.201602180812</span></div></body></html>
